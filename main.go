@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("Project start here")
+	firstArg := os.Args[1]
+	fmt.Printf("The first argument is %s", firstArg)
 }
